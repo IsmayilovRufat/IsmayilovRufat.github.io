@@ -1,0 +1,19 @@
+#website{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#website p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#website .buttons button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+

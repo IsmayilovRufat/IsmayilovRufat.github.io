@@ -1,0 +1,61 @@
+header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .main .logo{
+    width: 80px;
+    height: 80px;
+    animation: logo 3s infinite ;
+}
+
+header .main .logo a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+header .main .logo a img{
+    width: 100%;
+    border-radius: 50px
+}
+
+
+header .main ul li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+header .main ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+header .main ul li a.active{
+    color: var(--hoverWhite);
+}
+
+header .main ul li a:hover{
+    color: var(--hoverWhite);
+}
+
+
+@keyframes logo{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

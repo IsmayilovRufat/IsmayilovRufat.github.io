@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#top h1 {
+    color: var(--black);
+    font-size: 5rem;
+    text-align: center;
+    animation-name: title;
+    animation-duration: 3s;
+}
+
+
+#entry{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#entry p {
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+#entry .image img{
+    width: 100%;
+}
+
+
+
+@keyframes title {
+    from {
+        margin-left: -200rem;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+button{
+    padding: 1.5rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button.white{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+button.white:hover{
+    background-color: var(--hoverWhite);
+}
+
+button.black{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+button.black:hover{
+    background-color: var(--hoverBlack);
+}
+
+#event{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#event p{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+iframe{
+    margin-bottom: 2rem;
+}
+
+video{
+    margin-bottom: 2rem;
+    width: 45%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    background-color: var(--black);
+}
+
+footer ul li{
+    margin-bottom: 1.5rem;
+}
+
+footer ul li a{
+    font-size: 2rem;
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--white);
+}
+
+footer ul li a:hover{
+
+    color: var(--hoverWhite);
+}
+
+footer p{
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+footer p a{
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--white);
+}
+
+header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .main .logo{
+    width: 80px;
+    height: 80px;
+    animation: logo 3s infinite ;
+}
+
+header .main .logo a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+header .main .logo a img{
+    width: 100%;
+    border-radius: 50px
+}
+
+
+header .main ul li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+header .main ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+header .main ul li a.active{
+    color: var(--hoverWhite);
+}
+
+header .main ul li a:hover{
+    color: var(--hoverWhite);
+}
+
+
+@keyframes logo{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+ul{
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#members .image{
+    width: 95rem;
+}
+
+
+#members .image {
+    width: 70rem;
+    position: relative;
+}
+
+#members .image.member-1{
+    width: 95rem;
+}
+
+
+#members .image img {
+    width: 100%;
+}
+
+#members .member {
+    box-shadow: 0px 10px 20px 2px var(--gray);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#members p {
+    padding: 2rem;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+
+#members .member.first{
+    animation: firstAnimation 3s;
+}
+
+
+#members .member.second{
+    animation: firstAnimation 4s;
+}
+
+@keyframes firstAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1 ;
+    }
+}
+
+:root{
+    --black : black;
+    --white : white;
+    --hoverWhite: rgb(199, 198, 198);
+    --hoverBlack: rgb(42, 42, 42);
+    --gray: #3a3a3b;
+}
+
+#website{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#website p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#website .buttons button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}

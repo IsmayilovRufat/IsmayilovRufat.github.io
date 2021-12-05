@@ -1,0 +1,13 @@
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+ul{
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+}

@@ -1,0 +1,22 @@
+#event{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#event p{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+iframe{
+    margin-bottom: 2rem;
+}
+
+video{
+    margin-bottom: 2rem;
+    width: 45%;
+}

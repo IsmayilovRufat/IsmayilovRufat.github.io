@@ -1,0 +1,25 @@
+button{
+    padding: 1.5rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button.white{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+button.white:hover{
+    background-color: var(--hoverWhite);
+}
+
+button.black{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+button.black:hover{
+    background-color: var(--hoverBlack);
+}
